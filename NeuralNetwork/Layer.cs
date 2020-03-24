@@ -10,10 +10,12 @@ namespace NeuralNetwork
     {
         public List<Neuron> Neurons { get; }
         public int Count => Neurons?.Count ?? 0;
+        public NeuronType Type;
 
         public Layer(List<Neuron> neurons, NeuronType type = NeuronType.Normal)
         {
             Neurons = neurons;
+            Type = type;
 
         }
 
